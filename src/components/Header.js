@@ -7,10 +7,10 @@ const Header = () => {
         <Nav>
             <Logo>MyPortfolio</Logo>
             <Menu>
-                <menuItem><Link to="details" smooth>Home</Link></menuItem>
-                <menuItem><Link to="about" smooth>About</Link></menuItem>
-                <menuItem><Link to="projects" smooth>Projects</Link></menuItem>
-                <menuItem><Link to="contact" smooth>Contact</Link></menuItem>
+                <MenuItem><Link to="details" smooth>Home</Link></MenuItem>
+                <MenuItem><Link to="about" smooth>About</Link></MenuItem>
+                <MenuItem><Link to="projects" smooth>Projects</Link></MenuItem>
+                <MenuItem><Link to="contact" smooth>Contact</Link></MenuItem>
             </Menu>
         </Nav>
     );
