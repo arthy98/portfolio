@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { FiGithub, FiExternalLink } from "react-icons/fi";
+import { FiGithub } from "react-icons/fi";
 
 const Projects = () => {
   const ref = useRef(null);
@@ -9,38 +9,38 @@ const Projects = () => {
   const projects = [
     {
       title: "Dalhousie Hockey League (DHL) System",
-      description: "A Hockey Game Simulation System built on JAVA .",
-      techStack: ["Java", "API"],
+      description: "A Hockey Game Simulation System built on JAVA that interacts with console.",
+      techStack: ["Java", "API", "GIT", "SOLID principles", "Design Patterns"],
       link: "#",
-      github: "#",
+      github: "https://github.com/Arthy-Umapathy/Graduate_projects",
     },
     {
       title: "Restrainer",
       description: "A Detox Android Application based on Usability Heuristics and used Android packages.",
       techStack: ["Kotlin", "MongoDB", "MySQL", "Typescript", "JavaScript", "Python"],
       link: "#",
-      github: "#",
+      github: "https://github.com/Arthy-Umapathy/Graduate_projects",
     },
     {
       title: "Rentickly",
-      description: "Rental Application using React Js and Flask along with MySQL Database.",
+      description: "Canada based Rental Application using React Js and Flask along with MySQL Database.",
       techStack: ["React", "API", "Flask", "Python", "AWS RDS", "Google Firebase"],
       link: "#",
-      github: "#",
+      github: "https://github.com/Arthy-Umapathy/Graduate_projects",
     },
     {
       title: "DAL Serverless LMS",
       description: "A Multi-Cloud based Serverless Learning Management System.",
       techStack: ["GCP Pub/Sub", "AWS LEX", "AWS Sage Maker", "AWS Comprehend"],
       link: "#",
-      github: "#",
+      github: "https://github.com/Arthy-Umapathy/Graduate_projects",
     },
     {
       title: "Portfolio Website",
       description: "A personal portfolio showcasing my work and skills.",
       techStack: ["React", "Tailwind CSS", "CSS", "AOS", "Material UI"],
       link: "#",
-      github: "#",
+      github: "https://github.com/Arthy-Umapathy/Graduate_projects",
     },
   ];
   
@@ -142,14 +142,14 @@ const Projects = () => {
                       >
                         <FiGithub size={20} />
                       </motion.a>
-                      <motion.a
+                      {/* <motion.a
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.95 }}
                         href={project.link}
                         className="text-gray-400 hover:text-purple-400 transition-colors"
                       >
                         <FiExternalLink size={20} />
-                      </motion.a>
+                      </motion.a> */}
                     </div>
                   </div>
                   <p className="text-gray-300 font-light mb-4">

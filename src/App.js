@@ -37,9 +37,11 @@ const App = () => {
           </section>
           <section id="contact">
             <Contact />
+            </section>
+          <section id="footer">
+            <Footer />
           </section>
         </main>
-        <Footer />
       </Layout>
     </ThemeProvider>
   );

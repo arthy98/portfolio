@@ -1,25 +1,61 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { useTheme } from "./ThemeContext";
+
 const Footer = () => {
+  const { theme } = useTheme();
+
   return (
-    <footer className="py-6 bg-gray-900 text-center text-text">
+    <footer 
+      className={`text-center transition-colors duration-300 py-6`}
+    >
       <div className="flex justify-center space-x-6 mb-4">
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-          <FaGithub className="text-xl hover:text-primary" />
+        <a 
+          href="https://github.com/Arthy-Umapathy/Graduate_projects" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className={`transition-colors duration-300 ${
+            theme === 'dark' 
+              ? 'text-gray-300 hover:text-purple-400' 
+              : 'text-gray-900 hover:text-purple-600'
+          }`}
+        >
+          <FaGithub className="text-2xl" />
         </a>
         <a
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/arthy-umapathy-3a6a26162/"
           target="_blank"
           rel="noopener noreferrer"
+          className={`transition-colors duration-300 ${
+            theme === 'dark' 
+              ? 'text-gray-300 hover:text-purple-400' 
+              : 'text-gray-900 hover:text-purple-600'
+          }`}
         >
-          <FaLinkedin className="text-xl hover:text-primary" />
+          <FaLinkedin className="text-2xl" />
         </a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-          <FaTwitter className="text-xl hover:text-primary" />
+        <a 
+          href="https://x.com/arthy98?s=21" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className={`transition-colors duration-300 ${
+            theme === 'dark' 
+              ? 'text-gray-300 hover:text-purple-400' 
+              : 'text-gray-900 hover:text-purple-600'
+          }`}
+        >
+          <FaTwitter className="text-2xl" />
         </a>
       </div>
-      <p className="text-sm">&copy; {new Date().getFullYear()} Arthy Umapathy. All rights reserved.</p>
+      <p className={`text-sm ${
+        theme === 'dark' 
+          ? 'text-gray-400' 
+          : 'text-gray-800'
+      }`}>
+        &copy; {new Date().getFullYear()} Arthy Umapathy. All rights reserved.
+      </p>
     </footer>
   );
 };
+
 export default Footer;

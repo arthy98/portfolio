@@ -8,21 +8,32 @@ import {
   FaJsSquare,
   FaGit,
   FaPython,
-  FaDatabase,
+  FaJava,
+  FaAws,
 } from "react-icons/fa";
-import { SiTailwindcss, SiTypescript } from "react-icons/si";
+import { SiTailwindcss, SiTypescript, SiDotnet, SiFlask, SiMongodb, SiMysql, SiFirebase, SiDocker, SiOracle, SiGooglecloud, SiMaterialdesign } from "react-icons/si";
 
 const skills = [
+  { name: "Python", icon: <FaPython />, color: "#3776AB" },
+  { name: "Java", icon: <FaJava/>, color: "#007396" },
+  { name: "C#", icon: <SiDotnet/>, color: "#239120" },
   { name: "React", icon: <FaReact />, color: "#61DAFB" },
   { name: "Node.js", icon: <FaNodeJs />, color: "#339933" },
-  { name: "HTML5", icon: <FaHtml5 />, color: "#E34F26" },
-  { name: "CSS3", icon: <FaCss3Alt />, color: "#1572B6" },
+  { name: "Flask", icon: <SiFlask/>, color: "#47A248" },
   { name: "JavaScript", icon: <FaJsSquare />, color: "#F7DF1E" },
   { name: "TypeScript", icon: <SiTypescript />, color: "#3178C6" },
+  { name: "HTML5", icon: <FaHtml5 />, color: "#E34F26" },
+  { name: "CSS3", icon: <FaCss3Alt />, color: "#1572B6" },
   { name: "Tailwind", icon: <SiTailwindcss />, color: "#06B6D4" },
+  { name: "Material UI", icon: <SiMaterialdesign/>, color: "#007FFF" },
   { name: "Git", icon: <FaGit />, color: "#F05032" },
-  { name: "Python", icon: <FaPython />, color: "#3776AB" },
-  { name: "SQL", icon: <FaDatabase />, color: "#4479A1" },
+  { name: "AWS", icon: <FaAws />, color: "#FF9900" },
+  { name: "GCP", icon: <SiGooglecloud/>, color: "#4285F4" },
+  { name: "MongoDB", icon: <SiMongodb />, color: "#47A248" },
+  { name: "MySQL", icon: <SiMysql />, color: "#4479A1" },
+  { name: "Firebase", icon: <SiFirebase />, color: "#FFA611" },
+  { name: "Oracle", icon: <SiOracle />, color: "#F80000" },
+  { name: "Docker", icon: <SiDocker />, color: "#0db7ed" },
 ];
 
 const Skills = () => {
