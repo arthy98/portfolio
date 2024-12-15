@@ -1,31 +1,47 @@
-import './App.css';
-import { ThemeProvider } from 'styled-components';
-import { theme } from './styles/Theme';
-import GlobalStyles from './styles/GlobalStyles';
-import WorkExperience from './components/WorkExperience';
-import Header from './components/Header';
-import Details from './components/Details';
-import About from './components/About';
-import Projects from './components/Projects';
-import Skills from './components/Skills';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import React from "react";
+import Header from "./components/Header";
+import About from "./components/About";
+import WorkExperience from "./components/WorkExperience";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import Aos from "aos";
+import Navbar from "./components/Navbar";
+import Skills from "./components/Skills";
+import Layout from "./components/Layout";
+import { ThemeProvider } from "./components/ThemeContext";
 
-function App() {
+const App = () => {
+  React.useEffect(() => {
+    Aos.init({ duration: 1200, once: true });
+  }, []);
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyles />
-      <Header />
-      <Details />
-      <About />
-      <WorkExperience />
-      <Projects />
-      <Skills />
-      <Contact />
-      <Footer />
+    <ThemeProvider>
+      <Layout>
+        <Navbar />
+        <main>
+          <section id="details">
+            <Header />
+          </section>
+          <section id="about">
+            <About />
+          </section>
+          <section id="workexperience">
+            <WorkExperience />
+          </section>
+          <section id="projects">
+            <Projects />
+          </section>
+          <section id="skills">
+            <Skills />
+          </section>
+          <section id="contact">
+            <Contact />
+          </section>
+        </main>
+        <Footer />
+      </Layout>
     </ThemeProvider>
   );
-}
-
-
+};
 export default App;
