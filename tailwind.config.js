@@ -2,6 +2,13 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   darkMode: 'class',
   theme: {
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+    },
     extend: {
       colors: {
         primary: "#64ffda", // Teal color
@@ -60,9 +67,13 @@ module.exports = {
             opacity: 0.8,
           },
         },
+      },
       borderRadius: {
         'hexagon': '24% 76% 28% 72% / 71% 34% 66% 29%',
       },
+      spacing: {
+        'navbar-mobile': '4rem', // Height for mobile navbar
+        'navbar-desktop': '100%', // Width for desktop navbar
       },
       fontFamily: {
         sans: ["Calibre", "Inter", "San Francisco", "sans-serif"],

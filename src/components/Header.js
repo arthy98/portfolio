@@ -23,10 +23,10 @@ const Header = () => {
   if (!mounted) return null;
 
   return (
-    <header className="relative min-h-screen w-full overflow-hidden">
+    <header className="relative min-h-screen w-full overflow-hidden pt-16 md:pt-0">
       <motion.button
         onClick={toggleTheme}
-        className="fixed top-6 right-6 z-50 p-3 rounded-full 
+        className="fixed top-20 right-6 z-50 p-3 rounded-full 
                bg-gray-200 dark:bg-gray-800 
                text-gray-800 dark:text-gray-200
                hover:bg-gray-300 dark:hover:bg-gray-700
@@ -37,7 +37,7 @@ const Header = () => {
         {theme === "dark" ? <FiSun size={24} /> : <FiMoon size={24} />}
       </motion.button>
 
-      <div className="absolute inset-0 flex flex-col items-center justify-center px-6">
+      <div className="absolute inset-0 flex flex-col items-center justify-center px-6 mt-16 md:mt-0">
         <div className="absolute inset-0 overflow-hidden">
           <motion.div
             className="absolute -top-20 -left-20 w-72 h-72 
