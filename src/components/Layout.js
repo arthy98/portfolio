@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 const Layout = ({ children }) => {
-  const [theme, setTheme] = useState("dark");
+  const [setTheme] = useState("dark");
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
