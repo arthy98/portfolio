@@ -1,6 +1,7 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { useTheme } from "./ThemeContext";
+import { SiLeetcode } from "react-icons/si";
 
 const Footer = () => {
   const { theme } = useTheme();
@@ -35,7 +36,7 @@ const Footer = () => {
           <FaLinkedin className="text-2xl" />
         </a>
         <a 
-          href="https://x.com/arthy98?s=21" 
+          href="https://leetcode.com/u/Arthy_Umapathy/" 
           target="_blank" 
           rel="noopener noreferrer"
           className={`transition-colors duration-300 ${
@@ -44,7 +45,7 @@ const Footer = () => {
               : 'text-gray-900 hover:text-purple-600'
           }`}
         >
-          <FaTwitter className="text-2xl" />
+          <SiLeetcode className="text-2xl" />
         </a>
       </div>
       <p className={`text-sm ${
