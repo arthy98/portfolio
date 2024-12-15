@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 
 const Layout = ({ children }) => {
-  const [setTheme] = useState("dark");
+  // eslint-disable-next-line no-unused-vars
+  const [theme, setTheme] = useState("dark");
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -9,7 +10,8 @@ const Layout = ({ children }) => {
     const savedTheme = localStorage.getItem("theme") || "dark";
     setTheme(savedTheme);
     document.documentElement.classList.toggle("dark", savedTheme === "dark");
-  }, []);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [setTheme]);
 
   if (!mounted) return null;
 
