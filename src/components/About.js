@@ -2,7 +2,6 @@ import React, { memo } from "react";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
-// Animation variants
 const fadeInVariants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1 },
@@ -23,7 +22,6 @@ const profileImageVariants = {
   visible: { opacity: 1, scale: 1, rotate: 0 },
 };
 
-// Memoized components
 const BackgroundBlobs = memo(() => (
   <div className="absolute inset-0 pointer-events-none">
     <div className="absolute top-40 left-20 w-64 h-64 bg-purple-500/10 rounded-full mix-blend-multiply filter blur-xl animate-blob" />
@@ -128,21 +126,79 @@ const About = () => {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center w-full">
-          <motion.p
-            className="text-base md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed font-light tracking-wide text-center md:text-left px-4 md:px-0"
+          <motion.div
+            className="flex flex-col space-y-6 text-base md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed font-light tracking-wide text-center md:text-left px-4 md:px-0"
             initial={{ opacity: 0, y: -50 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -50 }}
             transition={{ duration: 1.5 }}
           >
-            Hello! My name is Arthy and I am a dedicated software developer with
-            expertise in full-stack development and a passion for creating
-            user-friendly, efficient applications. I enjoy collaborating with
-            teams, mentoring talent, and exploring innovative technologies to
-            build impactful digital solutions. With experience on developer
-            roles, I bring strong technical and interpersonal skills to every
-            project. Outside of work, I draw inspiration from travel and new
-            experiences, always striving for continuous learning and growth!
-          </motion.p>
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5 }}
+            >
+              <span className="text-2xl font-medium bg-gradient-to-r from-teal-400 to-purple-500 text-transparent bg-clip-text">
+                Hello! I'm Arthy
+              </span>{" "}
+              — a dedicated software developer passionate about creating
+              user-friendly, efficient applications.
+            </motion.p>
+
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.7 }}
+              className="relative"
+            >
+              As an{" "}
+              <a
+                href="https://www.credly.com/badges/75084134-7265-431b-ac7b-282eca662f56/public_url"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative inline-block group"
+              >
+                <span className="text-teal-400 hover:text-purple-400 transition-colors duration-300 font-medium">
+                  AWS Certified Solutions Architect
+                </span>
+                <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-teal-400 to-purple-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+              </a>
+              , I specialize in designing and implementing scalable cloud
+              solutions.
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.9 }}
+              className="space-y-4"
+            >
+              <p>My expertise extends to:</p>
+              <ul className="list-none space-y-2 md:space-y-1">
+                <li className="flex items-center space-x-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-teal-400"></span>
+                  <span>Full-stack development with modern technologies</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-teal-400"></span>
+                  <span>Team collaboration and talent mentoring</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-teal-400"></span>
+                  <span>Building impactful digital solutions</span>
+                </li>
+              </ul>
+            </motion.div>
+
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1.1 }}
+              className="italic text-gray-400 dark:text-gray-500"
+            >
+              Outside of work, I draw inspiration from travel and new
+              experiences, always striving for continuous learning and growth!
+            </motion.p>
+          </motion.div>
           <ProfileImage />
         </div>
       </div>

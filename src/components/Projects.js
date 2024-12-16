@@ -17,7 +17,7 @@ const Projects = () => {
     {
       title: "Restrainer",
       description: "A Detox Android Application based on Usability Heuristics and used Android packages.",
-      techStack: ["Kotlin", "MongoDB", "MySQL", "Typescript", "JavaScript", "Python"],
+      techStack: ["Kotlin", "MySQL", "Typescript", "JavaScript", "Python", "Pandas"],
       link: "#",
       github: "https://github.com/Arthy-Umapathy/Graduate_projects",
     },
@@ -32,6 +32,13 @@ const Projects = () => {
       title: "DAL Serverless LMS",
       description: "A Multi-Cloud based Serverless Learning Management System.",
       techStack: ["GCP Pub/Sub", "AWS LEX", "AWS Sage Maker", "AWS Comprehend"],
+      link: "#",
+      github: "https://github.com/Arthy-Umapathy/Graduate_projects",
+    },
+    {
+      title: "Online Quiz Portal",
+      description: "An Online Quiz Portal for internal employees based on technical expertise.",
+      techStack: ["React", "Nodejs", "Bootstrap", "MDBReact", "MongoDB"],
       link: "#",
       github: "https://github.com/Arthy-Umapathy/Graduate_projects",
     },
