@@ -52,6 +52,7 @@ const navItems = [
   { to: "about", Icon: FaIcons.FaUserAlt },
   { to: "workexperience", Icon: FaIcons.FaBriefcase },
   { to: "projects", Icon: FaIcons.FaLaptopCode },
+  { to: "certifications", Icon: FaIcons.FaMedal },
   { to: "skills", Icon: FaIcons.FaProjectDiagram },
   { to: "contact", Icon: FaIcons.FaEnvelope },
 ];

@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import Aos from "aos";
 import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
+import Certifications from "./components/Certifications";
 import Layout from "./components/Layout";
 import { ThemeProvider } from "./components/ThemeContext";
 
@@ -31,6 +32,9 @@ const App = () => {
           </section>
           <section id="projects">
             <Projects />
+          </section>
+          <section id="certifications">
+            <Certifications />
           </section>
           <section id="skills">
             <Skills />
