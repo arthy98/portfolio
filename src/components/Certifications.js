@@ -22,6 +22,21 @@ const Certifications = () => {
       image: "https://images.credly.com/size/680x680/images/834f2c8d-2d2c-4ce7-9580-02a351c31626/image.png", 
       link: "https://www.credly.com/badges/75084134-7265-431b-ac7b-282eca662f56/public_url",
     },
+    { 
+      name: "AWS Cloud Quest: Cloud Practitioner", 
+      image: "https://images.credly.com/size/680x680/images/2784d0d8-327c-406f-971e-9f0e15097003/image.png", 
+      link: "https://www.credly.com/badges/e09984fe-9e7b-4e32-b655-833ee7632bb9/public_url",
+    },
+    { 
+      name: "AWS Cloud Quest: Solutions Architect", 
+      image: "https://images.credly.com/size/680x680/images/9e9e7ef7-384f-4636-8743-1b89a68fb46b/image.png", 
+      link: "https://www.credly.com/badges/a11eaf68-1615-4267-83ba-5884f98b5347/public_url",
+    },
+    { 
+      name: "AWS Cloud Quest: Serverless Developer", 
+      image: "https://images.credly.com/size/680x680/images/9a2fd02b-52ab-448d-9d19-fd9b68efe1f6/image.png", 
+      link: "https://www.credly.com/badges/9879f88f-a627-4023-a4b1-6c88d895ed71/public_url",
+    },
   ];
 
   return (
